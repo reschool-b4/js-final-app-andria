@@ -3,9 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Records - Vinyl Pressing & Curated Records</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>here is changed h1 </h1>
+
+    <div class="bg-columns">
+        <div class="col-left"></div>
+        <div class="col-mid"></div>
+        <div class="col-right"></div>
+    </div>
+
+    <div class="app-container">
+        
+        <header class="header">
+            <a href="#home" class="logo">
+                <span class="logo-icon">✳</span> RECORDS
+            </a>
+            <nav class="nav">
+                <a href="#contact">[Contact]</a>
+                <a href="#about">[About]</a>
+                <a href="#shop">[Shop]</a>
+            </nav>
+            <button class="btn-outline">REGISTER</button>
+        </header>
+
+        <main class="hero-section" id="home">
+            
+            <div class="massive-text-bg">RECORDS</div>
+
+            <div class="vinyl-container">
+                <div class="vinyl-record">
+                    <div class="vinyl-label">
+                        <div class="label-pattern">✳</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-left">
+                <div class="stat-box">
+                    <h2>500+</h2>
+                    <p>Original records</p>
+                </div>
+
+                <div class="tracklist-container">
+                    <h3>OUR HITS</h3>
+                    <div class="track-list">
+                        <div class="track-item active" data-track="starman">
+                            <span class="track-num">01.</span>
+                            <img class="track-thumb" src="https://albumart.publicradio.org/mb/6c/6c9ae3dd-32ad-472c-96be-69d0a3536261_fd0b.jpg" alt="Starman">
+                            <div class="track-meta">
+                                <span class="track-title">STARMAN</span>
+                                <span class="track-artist">David Bowie</span>
+                            </div>
+                            <span class="track-duration">4:16</span>
+                        </div>
+                        <div class="track-item" data-track="holy-diver">
+                            <span class="track-num">02.</span>
+                            <img class="track-thumb" src="https://upload.wikimedia.org/wikipedia/en/0/08/DioHolyDiver.jpg" alt="Holy Diver">
+                            <div class="track-meta">
+                                <span class="track-title">HOLY DIVER</span>
+                                <span class="track-artist">Dio</span>
+                            </div>
+                            <span class="track-duration">5:51</span>
+                        </div>
+                        <div class="track-item" data-track="thunderstruck">
+                            <span class="track-num">03.</span>
+                            <img class="track-thumb" src="https://cdn-images.dzcdn.net/images/cover/e715766b21a8db6076f6a9a89e25cf82/1900x1900-000000-80-0-0.jpg" alt="Thunderstruck">
+                            <div class="track-meta">
+                                <span class="track-title">THUNDERSTRUCK</span>
+                                <span class="track-artist">AC/DC</span>
+                            </div>
+                            <span class="track-duration">4:52</span>
+                        </div>
+                        <div class="track-item" data-track="immigrant-song">
+                            <span class="track-num">04.</span>
+                            <img class="track-thumb" src="https://i.scdn.co/image/ab67616d0000b27390a50cfe99a4c19ff3cbfbdb" alt="Immigrant Song">
+                            <div class="track-meta">
+                                <span class="track-title">IMMIGRANT SONG</span>
+                                <span class="track-artist">Led Zeppelin</span>
+                            </div>
+                            <span class="track-duration">2:26</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="pitch-container">
+                    <p class="pitch-text">
+                        Original pressings, reissues, and rarities — sourced, cleaned, and graded by people who actually listen.
+                    </p>
+                    <button class="btn-solid">LET'S BUY</button>
+                </div>
+
+                <div class="player-container">
+                    <h3>PLAY NOW</h3>
+                    <div class="player-controls">
+                        <button class="play-btn" id="playToggle">
+                            <svg viewBox="0 0 24 24" class="play-icon"><path d="M8 5v14l11-7z"/></svg>
+                            <svg viewBox="0 0 24 24" class="pause-icon hidden"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <div class="waveform">
+                            <div class="bar" style="--h: 40%"></div>
+                            <div class="bar" style="--h: 60%"></div>
+                            <div class="bar" style="--h: 30%"></div>
+                            <div class="bar" style="--h: 85%"></div>
+                            <div class="bar" style="--h: 95%"></div>
+                            <div class="bar" style="--h: 45%"></div>
+                            <div class="bar" style="--h: 70%"></div>
+                            <div class="bar" style="--h: 55%"></div>
+                            <div class="bar" style="--h: 90%"></div>
+                            <div class="bar" style="--h: 35%"></div>
+                            <div class="bar" style="--h: 75%"></div>
+                            <div class="bar" style="--h: 50%"></div>
+                            <div class="bar" style="--h: 80%"></div>
+                            <div class="bar" style="--h: 40%"></div>
+                            <div class="bar" style="--h: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <section class="site-section about-section" id="about">
+        <div class="section-inner about-inner">
+            <span class="section-eyebrow">OUR STORY</span>
+            <h2 class="section-title">BUILT LIKE A<br>B-SIDE YOU NEVER<br>SKIP</h2>
+            <p class="section-text">RECORDS started in a basement studio with a simple obsession: tracking down pressings that actually sound like they were meant to. Every record we sell is auditioned first — needle-dropped, graded, and sleeved like it's going straight onto your turntable, not just into a crate.</p>
+            <div class="about-stats">
+                <div class="about-stat">
+                    <h3>2016</h3>
+                    <p>Founded</p>
+                </div>
+                <div class="about-stat">
+                    <h3>1,200+</h3>
+                    <p>Records sold</p>
+                </div>
+                <div class="about-stat">
+                    <h3>48hr</h3>
+                    <p>Avg. shipping time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section shop-section" id="shop">
+        <div class="section-inner">
+            <span class="section-eyebrow">THE CATALOG</span>
+            <h2 class="section-title">SHOP RECORDS</h2>
+            <div class="shop-grid">
+                <div class="shop-card">
+                    <div class="shop-swatch">
+                        <div class="shop-disc">
+                            <div class="shop-disc-label shop-disc-label-bowie"></div>
+                        </div>
+                    </div>
+                    <h4>The Rise and Fall of Ziggy Stardust</h4>
+                    <p>David Bowie — 180g reissue, mirror-clean pressing.</p>
+                    <div class="shop-card-footer">
+                        <span class="shop-price">$40</span>
+                        <button class="btn-select">SELECT</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-swatch">
+                        <div class="shop-disc">
+                            <div class="shop-disc-label shop-disc-label-dio"></div>
+                        </div>
+                    </div>
+                    <h4>Holy Diver</h4>
+                    <p>Dio — 180g reissue, deep black vinyl.</p>
+                    <div class="shop-card-footer">
+                        <span class="shop-price">$35</span>
+                        <button class="btn-select">SELECT</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-swatch">
+                        <div class="shop-disc">
+                            <div class="shop-disc-label shop-disc-label-acdc"></div>
+                        </div>
+                    </div>
+                    <h4>Back in Black</h4>
+                    <p>AC/DC — remastered 180g, standard black vinyl.</p>
+                    <div class="shop-card-footer">
+                        <span class="shop-price">$26</span>
+                        <button class="btn-select">SELECT</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-swatch">
+                        <div class="shop-disc">
+                            <div class="shop-disc-label shop-disc-label-zeppelin"></div>
+                        </div>
+                    </div>
+                    <h4>Led Zeppelin III</h4>
+                    <p>Led Zeppelin — our signature pick of the year.</p>
+                    <div class="shop-card-footer">
+                        <span class="shop-price">$30</span>
+                        <button class="btn-select">SELECT</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-swatch">
+                        <div class="shop-disc">
+                            <div class="shop-disc-label shop-disc-label-daftpunk"></div>
+                        </div>
+                    </div>
+                    <h4>Discovery</h4>
+                    <p>Daft Punk — 2LP gatefold pressing.</p>
+                    <div class="shop-card-footer">
+                        <span class="shop-price">$40</span>
+                        <button class="btn-select">SELECT</button>
+                    </div>
+                </div>
+                <div class="shop-card">
+                    <div class="shop-swatch">
+                        <div class="shop-disc">
+                            <div class="shop-disc-label shop-disc-label-tameimpala"></div>
+                        </div>
+                    </div>
+                    <h4>Currents</h4>
+                    <p>Tame Impala — 2LP, audiophile cut.</p>
+                    <div class="shop-card-footer">
+                        <span class="shop-price">$40</span>
+                        <button class="btn-select">SELECT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section contact-section" id="contact">
+        <div class="section-inner contact-inner">
+            <div class="contact-info">
+                <span class="section-eyebrow">SAY HELLO</span>
+                <h2 class="section-title">GET IN<br>TOUCH</h2>
+                <p class="section-text">Looking for a specific pressing, want to sell your collection, or just want to talk records? We'll get back to you within one business day.</p>
+                <div class="contact-detail">
+                    <span class="contact-label">Studio</span>
+                    <span>i dont think i wanna put my adress hire</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="contact-label">Phone</span>
+                    <span>+995 596 53 95 95</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="contact-label">Email</span>
+                    <span>andria.shubini@gmail.com</span>
+                </div>
+                <div class="contact-detail">
+                    <span class="contact-label">Hours</span>
+                    <span>when i want to work</span>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="input-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" placeholder="you@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="4" placeholder="Tell us what you're looking for" required></textarea>
+                </div>
+                <button type="submit" class="btn-solid">SEND MESSAGE</button>
+                <p class="contact-success hidden" id="contactSuccess">Thanks — we'll be in touch shortly.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="section-inner footer-inner">
+            <span class="footer-brand">✳ RECORDS</span>
+            <nav class="footer-nav">
+                <a href="#about">About</a>
+                <a href="#shop">Shop</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <p class="footer-copy">© 2026 RECORDS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay hidden" id="registerModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+
+            <div class="modal-side">
+                <div class="modal-vinyl-mini spinning">
+                    <div class="modal-vinyl-mini-label"></div>
+                </div>
+                <div class="modal-side-text">
+                    <span class="modal-eyebrow">JOIN THE CLUB</span>
+                    <h2 class="modal-title">CREATE<br>ACCOUNT</h2>
+                    <p class="modal-subtext">Early access to drops, exclusive pressings, and member-only pricing.</p>
+                </div>
+            </div>
+
+            <div class="modal-form-wrap">
+                <h3 class="modal-form-heading">Sign up</h3>
+                <form class="modal-form" id="registerForm">
+                    <div class="input-group">
+                        <label for="reg-name">Name</label>
+                        <input type="text" id="reg-name" placeholder="Your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="reg-contact">Email or phone</label>
+                        <input type="text" id="reg-contact" placeholder="you@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="reg-pass">Password</label>
+                        <input type="password" id="reg-pass" placeholder="••••••••" required minlength="6">
+                    </div>
+                    <div class="input-group" id="passGroup">
+                        <label for="reg-pass2">Repeat password</label>
+                        <input type="password" id="reg-pass2" placeholder="••••••••" required minlength="6">
+                        <span class="input-error">Passwords don't match</span>
+                    </div>
+                    <button type="submit" class="btn-solid">CREATE ACCOUNT</button>
+                    <p class="modal-footer-text">Already a member? <a href="#" id="switchToLogin">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
